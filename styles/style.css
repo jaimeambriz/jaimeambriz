@@ -107,7 +107,23 @@ body, html {
     flex-direction: column;
     align-items: center;
   }
-  
+  p{
+    color: white;
+  }
+  .gallery {
+    width: auto;
+    border-radius: 25%;
+}
+/* .gallery:hover {
+    box-shadow: 0 0 50px white;
+    border-radius: 25%;
+} */
+a img{
+    height:auto;
+    border-radius:25%;
+}
+img:hover{
+    box-shadow: 0 0 50px white;
   
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 600px) {
