@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-inverse" data-spy="affix">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Jaime Ambriz</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="navbar-home">
+          <a href="#">Home</a>
+        </li>
+        <li class="navbar-resume">
+          <a href="#about-me">Resume
+          </a>
+        </li>
+        <li class="navbar-projects">
+          <a href="#projects">Projects</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#contact-info">
+            <i class="fa fa-send"></i> Email Me</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-github"></i> GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--header-->
+  <div class="bkimg-4">
+    <div class="particlesdemo">
+
+      <canvas id='display' width='1' height='1' />
+
+      <script>
+        var DAMPING = 0.999;
+        function Particle(x, y) {
+          this.x = this.oldX = x;
+          this.y = this.oldY = y;
+        }
+        Particle.prototype.integrate = function () {
+          var velocityX = (this.x - this.oldX) * DAMPING;
+          var velocityY = (this.y - this.oldY) * DAMPING;
+          this.oldX = this.x;
+          this.oldY = this.y;
+          this.x += velocityX;
+          this.y += velocityY;
+        };
+        Particle.prototype.attract = function (x, y) {
+          var dx = x - this.x;
+          var dy = y - this.y;
+          var distance = Math.sqrt(dx * dx + dy * dy);
+          this.x += dx / distance;
+          this.y += dy / distance;
+        };
+        Particle.prototype.draw = function () {
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          ctx.moveTo(this.oldX, this.oldY);
+          ctx.lineTo(this.x, this.y);
+          ctx.stroke();
+        };
+        var display = document.getElementById('display');
+        var ctx = display.getContext('2d');
+        var particles = [];
+        var width = display.width = window.innerWidth;
+        var height = display.height = window.innerHeight;
+        var mouse = { x: width * 0.5, y: height * 0.5 };
+        for (var i = 0; i < 200; i++) {
+          particles[i] = new Particle(Math.random() * width, Math.random() * height);
+        }
+        display.addEventListener('mousemove', onMousemove);
+        function onMousemove(e) {
+          mouse.x = e.clientX;
+          mouse.y = e.clientY;
+        }
+        requestAnimationFrame(frame);
+        function frame() {
+          requestAnimationFrame(frame);
+          ctx.clearRect(0, 0, width, height);
+          for (var i = 0; i < particles.length; i++) {
+            particles[i].attract(mouse.x, mouse.y);
+            particles[i].integrate();
+            particles[i].draw();
+          }
+        }
+      </script>
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-50885475-1', 'playfuljs.com');
+        ga('send', 'pageview');
+      </script>
+    </div>
+    <div class="flex-it">
+
+      <div class="caption flex">
+        <img class="imgofme" src="https://avatars3.githubusercontent.com/u/29165973?s=400&u=ff2dc65e86d13f1cd9b3555e204e51102c508365&v=4"
+          alt="picture of me">
+        <h3 class="border">Jaime Ambriz</h3>
+        <h2 class="border">Full Stack Developer_</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-me" id="about-me">
+    <h3>About Me</h3>
+    <p>MY INFO Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod voluptates neque optio, in illum amet
+      fugiat voluptatibus harum, molestias at libero similique voluptate nihil.</p>
+  </div>
+  <!--test-->
+  <div class="bkimg-2">
+    <div class="caption">
+      <div class="border">Test</div>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <div class="info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iure ratione quos inventore natus aut? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Necessitatibus, nisi?</p>
+    </div>
+  </div>
+  <!--body/projects-->
+  <div class="bkimg-3" id="projects">
+    <div class="caption">
+      <div class="border">Body
+      </div>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <div class="info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium rem quaerat alias et labore dicta iure
+        repudiandae corrupti est?</p>
+    </div>
+  </div>
+  <!--footer/contact me-->
+  <div class="bkimg-1" id="contact-info">
+    <div class="caption">
+      <h3 class="border">Footer</h3>
+    </div>
+  </div>
+
+</body>
+
+</html>

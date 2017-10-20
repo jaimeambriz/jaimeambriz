@@ -1,0 +1,117 @@
+/*
+*{
+  outline: red solid 1px;
+}
+*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 fantasy, sans-serif;
+    color: #777;
+  }
+  /*navbar*/
+  .navbar{
+    border-radius: 0;
+    margin:0;
+    border:0;
+  }
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar-inverse{
+    background-color: transparent;
+  }
+  .bkimg-1, .bkimg-2, .bkimg-3, .bkimg-4{
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bkimg-1 {
+    background-image: url("http://coolwallpaperz.info/user-content/uploads/wall/o/60/abstract-dark-hd-jootix-113437.jpg");
+    min-height: 100%;
+  }
+  
+  .bkimg-2 {
+    background-image: url("https://www.jpl.nasa.gov/assets/images/content/tmp/home/missions_bg_image.jpg");
+    min-height: 400px;
+  }
+  
+  .bkimg-3 {
+    background-image: url("http://wallpaperbackgrounds.com/Content/wallpapers/cgi/3d/158411-15664.jpg");
+    min-height: 100%;
+  }
+  .bkimg-4{
+    background-image: url("http://space.airbus.com/wp-content/uploads/2016/08/space-systems-reaching-the-stars-1_1920x800-1440x600.jpg");
+    min-height: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  .caption .border {
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    
+    letter-spacing: 10px;
+    font-family: fantasy;
+  }
+  .imgofme {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 1px white solid;
+  }
+  .about-me{
+    color: #777;
+    background-color:white;
+    text-align: center;
+    text-align: justify;
+    padding: 50px 80px;
+  }
+  .info{
+    color: white;
+    background-color: rgba(78, 78, 78, 1.0);
+    text-align: center;
+    padding: 50px 80px;
+    text-align:justify;
+  }
+  .border{
+    background-color: transparent;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px fantasy, sans-serif;
+    color: #111;
+    text-align: center;
+  }
+  .flex-it{
+    display: flex;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+          background-attachment: scroll;
+      }
+  }
