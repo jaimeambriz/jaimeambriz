@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Landing Page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -34,11 +34,11 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
+        <li class="navbar-email">
           <a href="#contact-info">
             <i class="fa fa-send"></i> Email Me</a>
         </li>
-        <li>
+        <li class="navbar-github">
           <a href="#">
             <i class="fa fa-github"></i> GitHub</a>
         </li>
@@ -48,7 +48,7 @@
 
   <!--header-->
   <div class="bkimg-4">
-    <div class="particlesdemo">
+    <div class="particlesdemo"> -->
 
       <canvas id='display' width='1' height='1' />
 
@@ -106,21 +106,21 @@
           }
         }
       </script>
+    </div> -->
+    <!-- <div class="container-fluid"> -->
+    <div class="caption flex ">
+      <img class="imgofme" src="https://avatars3.githubusercontent.com/u/29165973?s=400&u=ff2dc65e86d13f1cd9b3555e204e51102c508365&v=4"
+        alt="picture of me">
+      <h3 class="border">Jaime Ambriz</h3>
+      <h2 class="border animation">Full Stack Developer
+        <span>_</span>
+      </h2>
     </div>
-    <div class="flex-it">
-
-      <div class="caption flex">
-        <img class="imgofme" src="https://avatars3.githubusercontent.com/u/29165973?s=400&u=ff2dc65e86d13f1cd9b3555e204e51102c508365&v=4"
-          alt="picture of me">
-        <h3 class="border">Jaime Ambriz</h3>
-        <h2 class="border">Full Stack Developer_</h2>
-      </div>
-    </div>
+    <!-- </div> -->
   </div>
-
   <div class="about-me" id="about-me">
     <h3>About Me</h3>
-    <p>MY INFO Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod voluptates neque optio, in illum amet
+    <p class="about-me-info">MY INFO Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod voluptates neque optio, in illum amet
       fugiat voluptatibus harum, molestias at libero similique voluptate nihil.</p>
   </div>
   <!--test-->
@@ -135,47 +135,57 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iure ratione quos inventore natus aut? Lorem ipsum
         dolor sit amet consectetur adipisicing elit. Necessitatibus, nisi?</p>
     </div>
-</div>
-<!--body/projects-->
-<div class="bkimg-3" id="projects">
+  </div>
+  <!--body/projects-->
+  <div class="bkimg-3" id="projects">
     <div class="caption container-fluid">
-        <div class="projects">
-                <div class="border">projects</div>
-            <div class="row body">
-                        <div class="col-xs-3">
-                            <div class="gallery">
-                                <a href="https://jaimeambriz.github.io/Clonesite/">
-                                  <img src="https://snag.gy/TKRC3u.jpg" alt="Clonesite picture" width="155" height="100">
-                                </a>
-                                <div class="description"> <p>Clonesite</p></div>
-                              </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="gallery">
-                                <a href="https://jaimeambriz.github.io/tribute-page/">
-                                  <img src="https://snag.gy/GoIpTX.jpg" width="155" height="100">
-                                </a>
-                                <div class="description"><p>Tribute Page</p></div>
-                              </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="gallery">
-                                <a href="#">
-                                  <img src="http://assets.coolhunting.com/coolhunting/mt_asset_cache/2014/06/parahawking-2.jpg" alt="Group Skydiving" width="155" height="100">
-                                </a>
-                                <div class="description"><p>Paragliding</p></div>
-                              </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="gallery">
-                                <a href="#">
-                                  <img src="https://awe365.com/content/uploads/2013/11/Types-of-skydiving-Wikimedia-image-by-Xof71110.jpg" width="155" height="100">
-                                </a>
-                                <div class="description"><p>Base Jumping</p></div>
-                              </div>
-                        </div>
-                    </div>
+      <div class="projects">
+        <div class="border">projects</div>
+        <div class="row body">
+          <div class="col-xs-3">
+            <div class="gallery">
+              <a href="https://jaimeambriz.github.io/Clonesite/">
+                <img class="project-img" src="https://snag.gy/TKRC3u.jpg" alt="Clonesite picture" width="155" height="100">
+              </a>
+              <div class="description">
+                <p>Clonesite</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="gallery">
+              <a href="https://jaimeambriz.github.io/tribute-page/">
+                <img class="project-img" src="https://snag.gy/GoIpTX.jpg" width="155" height="100">
+              </a>
+              <div class="description">
+                <p>Tribute Page</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="gallery">
+              <a href="#">
+                <img class="project-img" src="http://assets.coolhunting.com/coolhunting/mt_asset_cache/2014/06/parahawking-2.jpg" alt="Group Skydiving"
+                  width="155" height="100">
+              </a>
+              <div class="description">
+                <p>Paragliding</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="gallery">
+              <a href="#">
+                <img class="project-img" src="https://awe365.com/content/uploads/2013/11/Types-of-skydiving-Wikimedia-image-by-Xof71110.jpg"
+                  width="155" height="100">
+              </a>
+              <div class="description">
+                <p>Base Jumping</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
 

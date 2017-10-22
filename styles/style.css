@@ -1,21 +1,31 @@
-/*
-*{
+
+/* *{
   outline: red solid 1px;
-}
-*/
+} */
+
 body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 fantasy, sans-serif;
-    color: #777;
-  }
-  /*navbar*/
-  .navbar{
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 fantasy, sans-serif;
+  color: #777;
+}
+p{
+  color: white;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px fantasy, sans-serif;
+  color: #777;
+  text-align: center;
+}
+/*navbar*/
+.navbar{
     border-radius: 0;
     margin:0;
     border:0;
   }
-  .affix {
+  .affix{
     top: 0;
     width: 100%;
     z-index: 9999 !important;
@@ -50,11 +60,10 @@ body, html {
     background-image: url("http://space.airbus.com/wp-content/uploads/2016/08/space-systems-reaching-the-stars-1_1920x800-1440x600.jpg");
     min-height: 100%;
   }
-  
   .caption {
     position: absolute;
     left: 0;
-    top: 30%;
+    top: 18%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -80,6 +89,9 @@ body, html {
     text-align: justify;
     padding: 50px 80px;
   }
+  .about-me-info{
+    color: #777;
+  }
   .info{
     color: white;
     background-color: rgba(78, 78, 78, 1.0);
@@ -92,42 +104,61 @@ body, html {
     font-size: 25px;
     color: whitesmoke;
   }
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px fantasy, sans-serif;
-    color: #111;
-    text-align: center;
-  }
-  .flex-it{
+  /* .flex-it{
     display: flex;
-  }
+  } */
   .flex{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  p{
-    color: white;
+    top: 30%;
   }
   .gallery {
-    width: auto;
+    width: 100%;
+    height: auto;
     border-radius: 25%;
-}
-/* .gallery:hover {
-    box-shadow: 0 0 50px white;
-    border-radius: 25%;
-} */
-a img{
-    height:auto;
-    border-radius:25%;
-}
-img:hover{
-    box-shadow: 0 0 50px white;
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 600px) {
-      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
-          background-attachment: scroll;
-      }
   }
+  /* .gallery:hover {
+    box-shadow: 0 0 50px white;
+    border-radius: 25%;
+  } */
+  .project-img{
+    height:auto;
+    width: 100%;
+    border-radius:25%;
+    
+  }
+  .animation{
+    padding-top: 0px !important;
+    padding-bottom:0px !important;
+    overflow: hidden;
+    /* border-right:.15em solid white; */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 10px;
+    animation: typing 3s steps(29, end) 1;
+    /* blink-caret .75s step-end infinite; */
+  }
+  @keyframes typing{
+    from { width: 0;}
+    to { width: 60%;}
+  }
+  span{
+    animation: blink 1s infinite;
+  }
+  @keyframes blink{
+    to{ opacity: .0;}
+  }
+  /* @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  } */
+  .project-img:hover{
+    box-shadow: 0 0 50px white;
+  }
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+        background-attachment: scroll;
+      }
+    }
