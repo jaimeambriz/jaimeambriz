@@ -48,16 +48,17 @@ h3 {
   }
   
   .bkimg-2 {
-    background-image: url("https://www.jpl.nasa.gov/assets/images/content/tmp/home/missions_bg_image.jpg");
+    background-image: url("https://ak6.picdn.net/shutterstock/videos/24453860/thumb/1.jpg");
+    
     min-height: 400px;
   }
   
   .bkimg-3 {
-    background-image: url("http://wallpaperbackgrounds.com/Content/wallpapers/cgi/3d/158411-15664.jpg");
+    background-image: url("https://interactive.aljazeera.com/aje/2017/ramadan-2017-moonsight/moon-phases/moon26.jpg");
     min-height: 100%;
   }
   .bkimg-4{
-    background-image: url("http://space.airbus.com/wp-content/uploads/2016/08/space-systems-reaching-the-stars-1_1920x800-1440x600.jpg");
+    background-image: url("https://doninmass.files.wordpress.com/2013/05/space-sunrise-background-widescreen-earth-wallpapers.jpg");
     min-height: 100%;
   }
   .caption {
