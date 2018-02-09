@@ -115,7 +115,7 @@ h3 {
   }
   .gallery {
     width: 100%;
-    height: auto;
+    height: auto; 
     border-radius: 25%;
   }
   /* .gallery:hover {
@@ -124,9 +124,11 @@ h3 {
   } */
   .project-img{
     height:auto;
-    width: 100%;
+    width: 100%; 
     border-radius:25%;
-    
+  }
+  .projects-description{
+    margin-top: 15px
   }
   .animation{
     padding-top: 0px !important;

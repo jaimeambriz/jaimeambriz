@@ -17,11 +17,11 @@
 <body>
   <!--navbar-->
   <nav class="navbar navbar-inverse" data-spy="affix">
-    <div class="container-fluid">
+    <div class="container-fluid pull-left" style="display:flex; justify-content:space-between;">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Jaime Ambriz</a>
       </div>
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" style="display:flex">
         <li class="navbar-skills">
           <a href="#skills">Skills</a>
         </li>
@@ -33,7 +33,7 @@
           <a href="#projects">Projects</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" style="display:flex">
         <li class="navbar-email">
           <a href="#contact-info">
             <i class="fa fa-send"></i> Email Me</a>
@@ -48,6 +48,7 @@
 
   <!--header-->
   <div class="bkimg-1">
+    <!-- Particles -->
     <div class="particlesdemo">
       <canvas id='display' width='1' height='1' />
     </div>
@@ -64,9 +65,9 @@
   </div>
   <div class="about-me" id="about-me">
     <h3>About Me</h3>
-    <p class="about-me-info"> My name is Jaime Ambriz, I'm a recent graduate from Boise CodeWorks. Where I worked on multiple individual and team projects using numerous frameworks
-      to created full-stack applications. While doing so I was able familiarized myself with OAuth2. I'm currently seeking
-      employment where I can continue to grow and expand my coding knowledge.</p>
+    <p class="about-me-info"> My name is Jaime Ambriz, I'm a recent graduate from Boise CodeWorks. Where I worked on multiple individual and team projects
+      using numerous frameworks to created full-stack applications. While doing so I was able familiarized myself with OAuth2.
+      I'm currently seeking employment where I can continue to grow and expand my coding knowledge.</p>
   </div>
   <!-- PROJECTS-->
   <div class="bkimg-2" id="projects">
@@ -74,46 +75,51 @@
       <div class="projects">
         <div class="border">Projects</div>
         <div class="row body">
-          <div class="col-xs-6 col-sm-3">
+          <div class="col-xs-6 col-md-3">
             <div class="gallery">
               <a target="_blank" href="https://jaimeambriz.github.io/Clonesite/">
-                <img class="project-img" src="https://snag.gy/TKRC3u.jpg" alt="Clonesite picture" width="155" height="100">
+                <img class="project-img img-responsive" src="https://i.snag.gy/lnkY3C.jpg" alt="Clonesite picture">
               </a>
-              <div class="description">
+              <div class="projects-description">
                 <p>Clonesite</p>
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-3">
+          <div class="col-xs-6 col-md-3">
             <div class="gallery">
               <a target="_blank" href="https://jaimeambriz.github.io/Fantasy-Football/">
-                <img class="project-img" src="https://snag.gy/qj9Khk.jpg" width="155" height="100">
+                <img class="project-img img-responsive" src="https://i.snag.gy/unkrpw.jpg">
               </a>
-              <div class="description">
+              <div class="projects-description">
                 <p>Fantasy Football</p>
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-3">
+          <div class="col-xs-6 col-md-3">
             <div class="gallery">
               <a target="_blank" href="https://life-keepr.herokuapp.com">
-                <img class="project-img" src="https://snag.gy/yIADiX.jpg" alt="Keepr" width="155" height="100">
+                <img class="project-img img-responsive" src="https://i.snag.gy/wxHcDb.jpg" alt="Keepr">
               </a>
-              <div class="description">
+              <div class="projects-description">
                 <p>Keepr</p>
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-3">
+          <div class="col-xs-6 col-md-3">
             <div class="gallery">
               <a target="_blank" href="https://my-vue-music.herokuapp.com/">
-                <img class="project-img" src="https://snag.gy/rTqg8K.jpg" width="155" height="100">
+                <img class="project-img img-responsive" src="https://i.snag.gy/tKzFMB.jpg">
               </a>
-              <div class="description">
+              <div class="projects-description">
                 <p>Trak§</p>
               </div>
             </div>
           </div>
+          <!-- <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div> -->
+
         </div>
       </div>
     </div>
@@ -132,25 +138,23 @@
         <div class="row body">
           <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://codercamps.co/Img/javascript-logo.png" alt="Javascript" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/PloQDC.jpg" alt="Javascript">
               <div class="description">
                 <p>Javascript</p>
               </div>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-2">
+          <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://www.techuz.com/wp-content/themes/techuz/images/nodejs-icon.png" alt="Node.js" width="155"
-                height="100">
+              <img class="project-img" src="https://i.snag.gy/Nz6cqK.jpg" alt="Node.js">
               <div class="description">
                 <p>Node Js</p>
               </div>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-2">
+          <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://www.shareicon.net/download/2015/09/08/97875_html_512x512.png" alt="Html 5" width="155"
-                height="100">
+              <img class="project-img" src="https://i.snag.gy/cSt0A5.jpg" alt="Html 5">
               <div class="description">
                 <p>Html 5</p>
               </div>
@@ -158,7 +162,7 @@
           </div>
           <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://png.icons8.com/color/1600/css3.png" alt="Css 3" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/MflaV5.jpg" alt="Css 3">
               <div class="description">
                 <p>Css 3</p>
               </div>
@@ -166,8 +170,7 @@
           </div>
           <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://camo.githubusercontent.com/0617f4657fef12e8d16db45b8d73def73144b09f/68747470733a2f2f646576656c6f7065722e6665646f726170726f6a6563742e6f72672f7374617469632f6c6f676f2f6373686172702e706e67"
-                alt="Css 3" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/lTJdzu.jpg" alt="Css 3">
               <div class="description">
                 <p>C#</p>
               </div>
@@ -175,7 +178,7 @@
           </div>
           <div class="col-xs-4 col-sm-2">
             <div class="gallery">
-              <img class="project-img" src="https://www.clouda.ca/wp-content/uploads/2013/03/mongodb-logo.png" alt="C#" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/EK6Rou.jpg" alt="C#">
               <div class="description">
                 <p>Mongo db</p>
               </div>
@@ -185,7 +188,7 @@
         <div class="row body">
           <div class="col-xs-4 col-sm-2 col-sm-offset-1">
             <div class="gallery">
-              <img class="project-img" src="https://getbootstrap.com/assets/img/bootstrap-stack.png" alt="Bootstrap" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/K5XeAH.jpg" alt="Bootstrap">
               <div class="description">
                 <p>Bootsrap</p>
               </div>
@@ -193,7 +196,7 @@
           </div>
           <div class="col-xs-4 col-sm-2 col-sm-offset-2">
             <div class="gallery">
-              <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" alt="Vue js" width="155" height="100">
+              <img class="project-img" src="https://i.snag.gy/bVt9l7.jpg" alt="Vue js">
               <div class="description">
                 <p>Vue.js</p>
               </div>
@@ -201,8 +204,7 @@
           </div>
           <div class="col-xs-4 col-sm-2 col-sm-offset-2">
             <div class="gallery">
-              <img class="project-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png" alt="MySQL"
-                style="height:155px;">
+              <img class="project-img" src="https://i.snag.gy/4q5pF0.jpg" alt="MySQL">
               <div class="description">
                 <p>MySQL</p>
               </div>
