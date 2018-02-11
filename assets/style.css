@@ -254,36 +254,36 @@ from, to { border-color: transparent }
 
 /* Turn off parallax scrolling for tablets and phones */
 
-@media only screen and (max-device-width: 600px) {
+/* @media only screen and (max-device-width: 600px) {
     .bgimg-1,
     .bgimg-2,
     .bgimg-3,
     .bgimg-4 {
         background-attachment: scroll;
     }
-}
+} */
 
-@media screen and (max-width:770px) {
+@media screen and (max-height:450px) {
     .bkimg-4 {
         min-height: 250%
     }
 }
 
-@media screen and (max-width:770px) {
+/* @media screen and (max-width:770px) {
     .bkimg-3 {
         min-height: 100%
     }
-}
+} */
 
 /* @media screen and (max-width:770px), */
-@media screen and (max-height:500px) {
+@media screen and (max-height:450px) {
     .bkimg-2 {
         min-height: 250%
     }
 }
 
 /* @media screen and (max-width:770px), */
-@media screen and (max-height:500px) {
+@media screen and (max-height:450px) {
     .bkimg-1 {
         min-height: 150%
     }
