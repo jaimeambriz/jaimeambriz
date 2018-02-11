@@ -20,19 +20,33 @@ h3 {
   text-align: center;
 }
 /*navbar*/
-.navbar{
-    border-radius: 0;
-    margin:0;
-    border:0;
-  }
-  .affix{
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
-  .navbar-inverse{
-    background-color: transparent;
-  }
+nav {
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.nav-up {
+  top: -60px;
+}
+.nav-bar{
+  padding-top:15px;
+}
+.nav-content{
+  font-size:18px;
+  margin-right: 15px;
+  color: #777;
+}
+/* .github, .email{
+  margin-top: 4px;
+} */
+a:focus, a:hover{
+  color: white;
+  text-decoration: none;
+  
+}
   .bkimg-1, .bkimg-2, .bkimg-3, .bkimg-4{
     position: relative;
     opacity: 1;
@@ -104,6 +118,11 @@ h3 {
     font-size: 25px;
     color: whitesmoke;
   }
+  .animation{
+    background-color: transparent;
+    font-size: 25px;
+    color: whitesmoke;
+  }
   /* .flex-it{
     display: flex;
   } */
@@ -127,6 +146,9 @@ h3 {
     width: 100%; 
     border-radius:25%;
   }
+  .project-img:hover{
+    box-shadow: 0 0 50px white;
+  }
   .projects-description{
     margin-top: 15px
   }
@@ -141,6 +163,33 @@ h3 {
     animation: typing 3s steps(29, end) 1;
     /* blink-caret .75s step-end infinite; */
   }
+  @media(max-width:600px){
+    .animation{
+         font-size:19px;
+        }
+      }
+   @media(max-width:400px){
+    .animation{
+         font-size:13px;
+         }
+      }
+      @media(max-width:600px){
+        .nav-content {
+             font-size:14px;
+             margin-right: 10px;
+            }
+          }
+       @media(max-width:470px){
+        .nav-content {
+             font-size:12px;
+             margin-right: 6px;
+             }
+          }
+          @media(max-width:600px){
+            .nav-bar {
+                 padding-top:8px;
+                }
+              }
   @keyframes typing{
     from { width: 0;}
     to { width: 60%;}
@@ -151,13 +200,11 @@ h3 {
   @keyframes blink{
     to{ opacity: .0;}
   }
+  
   /* @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: white; }
   } */
-  .project-img:hover{
-    box-shadow: 0 0 50px white;
-  }
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 600px) {
       .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{

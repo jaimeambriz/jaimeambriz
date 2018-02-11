@@ -16,36 +16,18 @@
 
 <body>
   <!--navbar-->
-  <nav class="navbar navbar-inverse" data-spy="affix">
-    <div class="container-fluid pull-left" style="display:flex; justify-content:space-between;">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Jaime Ambriz</a>
-      </div>
-      <ul class="nav navbar-nav" style="display:flex">
-        <li class="navbar-skills">
-          <a href="#skills">Skills</a>
-        </li>
-        <li class="navbar-resume">
-          <a href="#about-me">Resume
-          </a>
-        </li>
-        <li class="navbar-projects">
-          <a href="#projects">Projects</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right" style="display:flex">
-        <li class="navbar-email">
-          <a href="#contact-info">
-            <i class="fa fa-send"></i> Email Me</a>
-        </li>
-        <li class="navbar-github">
-          <a target="_blank" href="https://github.com/jaimeambriz">
-            <i class="fa fa-github"></i> GitHub</a>
-        </li>
-      </ul>
+  <nav class="nav-down container-fluid">
+    <div class="nav-bar">
+      <a class="nav-content pull-left " href="#">Jaime Ambriz</a>
+      <a class="nav-content pull-left" href="#skills">Skills</a>
+      <a class="nav-content pull-left" href="#about-me">Resume</a>
+      <a class="nav-content pull-left" href="#projects">Projects</a>
+      <a  class="nav-content github pull-right" target="_blank" href="https://github.com/jaimeambriz">
+        <i class="fa fa-github"></i> GitHub</a>
+      <a class="nav-content email pull-right" href="#contact-info">
+        <i class="fa fa-send"></i> Email Me</a>
     </div>
   </nav>
-
   <!--header-->
   <div class="bkimg-1">
     <!-- Particles -->
@@ -57,7 +39,7 @@
       <img class="imgofme" src="https://avatars3.githubusercontent.com/u/29165973?s=400&u=ff2dc65e86d13f1cd9b3555e204e51102c508365&v=4"
         alt="picture of me">
       <h3 class="border">Jaime Ambriz</h3>
-      <h2 class="border animation">Full Stack Developer
+      <h2 class="animation">Full Stack Developer
         <span>_</span>
       </h2>
     </div>
@@ -71,7 +53,7 @@
   </div>
   <!-- PROJECTS-->
   <div class="bkimg-2" id="projects">
-    <div class="caption">
+    <div class="caption container-fluid">
       <div class="projects">
         <div class="border">Projects</div>
         <div class="row body">
@@ -229,6 +211,45 @@
   </div>
   <!-- ********* PUTS CRAZY LOAD ON CPU ********** -->
   <script src="app.js"></script>
+  <script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('nav').outerHeight();
+
+    $(window).scroll(function (event) {
+      didScroll = true;
+    });
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+
+      lastScrollTop = st;
+    }</script>
 </body>
 
 </html>
