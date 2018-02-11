@@ -211,6 +211,7 @@ border-radius: 25%;
     .animation {
         font-size: 11px;
     }
+
 }
 @media(max-width:600px) {
     .nav-content {
@@ -293,8 +294,11 @@ from, to { border-color: transparent }
 }
 @media screen and (max-width:450px) {
   .bkimg-2 {
-      min-height: 250%
+      min-height: 215%
   }
+  .bkimg-2 .caption{
+    top: 10%
+}
 }
 
 /* @media screen and (max-width:770px), */
