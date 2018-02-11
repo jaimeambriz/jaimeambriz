@@ -207,7 +207,11 @@ border-radius: 25%;
         font-size: 13px;
     }
 }
-
+@media(max-width:370px) {
+    .animation {
+        font-size: 11px;
+    }
+}
 @media(max-width:600px) {
     .nav-content {
         font-size: 14px;
@@ -222,6 +226,12 @@ border-radius: 25%;
     }
 }
 
+@media(max-width:370px) {
+    .nav-content {
+        font-size: 10px;
+        margin-right: 4px;
+    }
+}
 @media(max-width:600px) {
     .nav-bar {
         padding-top: 8px;

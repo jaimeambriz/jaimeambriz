@@ -32,7 +32,7 @@
   <div class="bkimg-1">
     <!-- Particles -->
     <div class="particlesdemo">
-      <canvas id='display' width='1' height='1' />
+      <!-- <canvas id='display' width='1' height='1' /> -->
     </div>
     <!-- <div class="container-fluid"> -->
     <div class="caption flex ">
@@ -212,7 +212,8 @@
   <!-- ********* PUTS CRAZY LOAD ON CPU ********** -->
   <script src="app.js"></script>
   <script>
-    // Hide Header on on scroll down
+
+    //  ******* THIS IS TO HIDE THE NAVBAR **********
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -250,6 +251,7 @@
 
       lastScrollTop = st;
     }
+    // ********** THIS IS FOR THE PROJECTS TO ASPECT ON MOBILE********
     function myFunction(x) {
       if (x.matches) { // If media query matches
         $('.project').removeClass("col-xs-6").addClass("col-xs-12")
