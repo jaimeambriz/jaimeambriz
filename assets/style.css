@@ -209,15 +209,10 @@ border-radius: 25%;
 }
 @media(max-width:370px) {
     .animation {
-        font-size: 11px;
-    }
-}
-@media(max-width:350px) {
-    .animation {
         font-size: 10px;
     }
-
 }
+
 @media(max-width:600px) {
     .nav-content {
         font-size: 14px;
