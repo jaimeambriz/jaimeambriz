@@ -294,7 +294,7 @@ from, to { border-color: transparent }
 }
 @media screen and (max-width:450px) {
   .bkimg-2 {
-      min-height: 230%
+      min-height: 250%
   }
   .bkimg-2 .caption{
     top: 10%
