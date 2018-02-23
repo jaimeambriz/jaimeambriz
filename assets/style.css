@@ -99,12 +99,14 @@ a:hover {
     text-align: center;
     color: #000;
 }
+.caption-form{
+top: 10%
+}
 
 .caption .border {
     color: #fff;
     padding: 18px;
     font-size: 25px;
-
     letter-spacing: 10px;
     font-family: fantasy;
 }
@@ -200,13 +202,190 @@ border-radius: 25%;
     animation: typing 3s steps(29, end) 1;
     /* blink-caret .75s step-end infinite; */
 }
+.blinking-span {
+    animation: blink 1s infinite;
+}
+/* ********* CONTACT FORM CSS ******* */
+#contact-form {
+    background-color:#F2F7F9;
+    width:465px;
+    padding:20px;
+    margin: 20px auto;    
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+ 
+#contact-form h1 {
+    font-size:42px;
+}
+ 
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:350px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+ 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+ 
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+ 
+#contact-form label {
+    display:block;
+}
+ 
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+ 
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+ 
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+ 
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+ 
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+ 
+#errors li:before {
+    content: ' - ';    
+}
+ 
+#errors #info {
+    font-weight:bold;
+}
+ 
+#errors #info:before {
+    content: '';    
+}
+ 
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+ 
+#errors.visible, #success.visible {
+    display:block;    
+}
+ 
+#req-field-desc {
+    font-style:italic;
+    color: black;
+}
+ 
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+/* ********* END ******* */
 
 @media(max-width:600px) {
     .animation {
         font-size: 19px;
     }
 }
-
 @media(max-width:400px) {
     .animation {
         font-size: 13px;
@@ -222,6 +401,9 @@ border-radius: 25%;
     .nav-content {
         font-size: 14px;
         margin-right: 10px;
+    }
+    .caption-form{
+        top: 2%
     }
 }
 
@@ -253,10 +435,6 @@ border-radius: 25%;
     }
 }
 
-span {
-    animation: blink 1s infinite;
-}
-
 @keyframes blink {
     to {
         opacity: .0;
@@ -277,8 +455,16 @@ from, to { border-color: transparent }
     .bkimg-4 {
         background-attachment: scroll;
     }
+    
 }
-
+@media(max-width:991px){
+    .project-img:hover {
+        box-shadow: 0 0 50px white;
+        transition-duration:0s;
+        transform: scale(1);
+      
+    }
+}
 @media screen and (max-height:450px) {
     .bkimg-4 {
         min-height: 250%
