@@ -170,14 +170,19 @@ box-shadow: 0 0 50px white;
 border-radius: 25%;
 } */
 
-.project-img {
+.project-img, .skill-img {
     height: auto;
     width: 100%;
     border-radius: 25%;
+    transition-duration:0.4s;
+    transform: scale(1);
 }
 
 .project-img:hover {
     box-shadow: 0 0 50px white;
+    transition-duration:0.4s;
+    transform: scale(1.2);
+  
 }
 
 .projects-description {
@@ -265,14 +270,14 @@ from, to { border-color: transparent }
 
 /* Turn off parallax scrolling for tablets and phones */
 
-/* @media only screen and (max-device-width: 600px) {
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3,
-    .bgimg-4 {
+@media only screen and (max-device-width: 600px) {
+    .bkimg-1,
+    .bkimg-2,
+    .bkimg-3,
+    .bkimg-4 {
         background-attachment: scroll;
     }
-} */
+}
 
 @media screen and (max-height:450px) {
     .bkimg-4 {
