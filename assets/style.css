@@ -553,14 +553,14 @@ from, to { border-color: transparent }
 }
 @media screen and (max-width:325px) {
     .bkimg-3 {
-        min-height: 210%
-    }
-}
-@media screen and (max-width:315px) {
-    .bkimg-3 {
         min-height: 240%
     }
 }
+/* @media screen and (max-width:315px) {
+    .bkimg-3 {
+        min-height: 240%
+    }
+} */
 /* @media screen and (max-width:770px), */
 
 @media screen and (max-width:450px) {
