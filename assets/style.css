@@ -548,12 +548,12 @@ from, to { border-color: transparent }
 }
 @media screen and (max-width:355px) {
     .bkimg-3 {
-        min-height: 170%
+        min-height: 180%
     }
 }
 @media screen and (max-width:325px) {
     .bkimg-3 {
-        min-height: 210%
+        min-height: 200%
     }
 }
 /* @media screen and (max-width:315px) {
