@@ -536,14 +536,16 @@ from, to { border-color: transparent }
     }
 }
 
+/* ******* THIS IS FOR IPHONE 7 PLUS ******** */
 @media screen and (max-width:450px) {
     .bkimg-3 {
         min-height: 140%
     }
 }
+/* ******* THIS IS FOR SAMSUNG GALAXY S7 ******* */
 @media screen and (max-width:400px) {
     .bkimg-3 {
-        min-height: 160%
+        min-height: 110%
     }
 }
 @media screen and (max-width:355px) {
@@ -551,6 +553,7 @@ from, to { border-color: transparent }
         min-height: 180%
     }
 }
+/* ******* THIS IS FOR IPHONE 6S ******** */
 @media screen and (max-width:325px) {
     .bkimg-3 {
         min-height: 200%
