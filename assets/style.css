@@ -539,13 +539,13 @@ from, to { border-color: transparent }
 /* ******* THIS IS FOR IPHONE 7 PLUS ******** */
 @media screen and (max-width:450px) {
     .bkimg-3 {
-        min-height: 140%
+        min-height: 130%
     }
 }
 /* ******* THIS IS FOR SAMSUNG GALAXY S7 ******* */
 @media screen and (max-width:400px) {
     .bkimg-3 {
-        min-height: 110%
+        min-height: 150%
     }
 }
 @media screen and (max-width:355px) {
