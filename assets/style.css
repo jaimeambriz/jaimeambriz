@@ -239,7 +239,7 @@ border-radius: 25%;
 #contact-form input, 
 #contact-form select, 
 #contact-form textarea {
-    width:350px;
+    width:100%;
     border: 1px solid #CEE1E8;
     margin-bottom:20px;
     padding:4px;
@@ -267,6 +267,7 @@ border-radius: 25%;
 }
  
 #contact-form #submit-button {
+    border-radius: 12px;
     width: 100px;
     background-color:#333;
     color:#FFF;
@@ -390,6 +391,7 @@ input.placeholder-text, textarea.placeholder-text  {
     .animation {
         font-size: 13px;
     }
+    
 }
 @media(max-width:370px) {
     .animation {
@@ -403,7 +405,7 @@ input.placeholder-text, textarea.placeholder-text  {
         margin-right: 10px;
     }
     .caption-form{
-        top: 2%
+        top: 8%
     }
 }
 
@@ -411,6 +413,9 @@ input.placeholder-text, textarea.placeholder-text  {
     .nav-content {
         font-size: 12px;
         margin-right: 6px;
+    }
+    #contact-form{
+        width: 90%
     }
 }
 
@@ -425,7 +430,59 @@ input.placeholder-text, textarea.placeholder-text  {
         padding-top: 8px;
     }
 }
-
+@media(max-height:910px) {
+    .bkimg-2 {
+        min-height: 120%
+    }
+}
+@media(max-height:780px) {
+    .bkimg-3 {
+        min-height: 110%
+    }
+    .bkimg-2 {
+        min-height: 140%
+    }
+}
+@media(max-height:680px) {
+    .bkimg-3 {
+        min-height: 130%
+    }
+    .bkimg-2 {
+        min-height: 160%
+    }
+}
+@media(max-height:590px) {
+    .bkimg-3 {
+        min-height: 150%
+    }
+    .bkimg-2 {
+        min-height: 180%
+    }
+}
+@media(max-height:500px) {
+    .bkimg-3 {
+        min-height: 170%
+    }
+    .bkimg-2 {
+        min-height: 200%
+    }
+}
+@media screen and (max-height:450px) {
+    .bkimg-2 {
+        min-height: 250%
+    }
+    .bkimg-3 {
+        min-height: 200%
+    }
+}
+@media(max-height:400px) {
+    .bkimg-3 {
+        min-height: 230%
+    }
+    .bkimg-2 {
+        min-height: 270%
+    }
+}
 @keyframes typing {
     from {
         width: 0;
@@ -471,18 +528,18 @@ from, to { border-color: transparent }
     }
 }
 
-/* @media screen and (max-width:770px) {
+@media screen and (max-width:450px) {
     .bkimg-3 {
-        min-height: 100%
-    }
-} */
-
-/* @media screen and (max-width:770px), */
-@media screen and (max-height:450px) {
-    .bkimg-2 {
-        min-height: 250%
+        min-height: 110%
     }
 }
+@media screen and (max-width:375px) {
+    .bkimg-3 {
+        min-height: 120%
+    }
+}
+/* @media screen and (max-width:770px), */
+
 @media screen and (max-width:450px) {
   .bkimg-2 {
       min-height: 250%
