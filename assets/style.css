@@ -183,7 +183,7 @@ border-radius: 25%;
 .project-img:hover {
     box-shadow: 0 0 50px white;
     transition-duration:0.4s;
-    transform: scale(1.2);
+    transform: scale(1.14);
   
 }
 
@@ -205,13 +205,14 @@ border-radius: 25%;
 .blinking-span {
     animation: blink 1s infinite;
 }
+
 /* ********* CONTACT FORM CSS ******* */
 #contact-form {
-    background-color:#F2F7F9;
+    background-color:#3d5661;
     width:465px;
     padding:20px;
     margin: 20px auto;    
-    border: 6px solid #8FB5C1;
+    border: 6px solid #d1d2d4;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     border-radius:15px;
@@ -276,78 +277,21 @@ border-radius: 25%;
     float:right;
     margin-bottom:0px;
     margin-right:6px;
-    background-color:#8FB5C1;
+    background-color: #337ab7;
+    border-color: #2e6da4;
 
 }
  
 #contact-form #submit-button:hover {
-    background-color: #A6CFDD;
+    background-color: #286090;
+    border-color: #122b40;
 }
  
 #contact-form #submit-button:active {
     position:relative;
     top:1px;
 }
- 
-#contact-form #loading {
-    width:32px;
-    height:32px;
-    background-image:url(../img/loading.gif);
-    display:block;
-    position:absolute;
-    right:130px;
-    bottom:16px;
-    display:none;
-}
- 
-#errors {
-    border:solid 1px #E58E8E;
-    padding:10px;
-    margin:25px 0px;
-    display:block;
-    width:437px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
-    display:none;
-}
- 
-#errors li {
-    padding:2px;
-    list-style:none;    
-}
- 
-#errors li:before {
-    content: ' - ';    
-}
- 
-#errors #info {
-    font-weight:bold;
-}
- 
-#errors #info:before {
-    content: '';    
-}
- 
-#success {
-    border:solid 1px #83D186;
-    padding:25px 10px;
-    margin:25px 0px;
-    display:block;
-    width:437px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
-    font-weight:bold;
-    display:none;
-}
- 
-#errors.visible, #success.visible {
-    display:block;    
-}
- 
+
 #req-field-desc {
     font-style:italic;
     color: black;
@@ -365,19 +309,19 @@ input:required, textarea:required {
  
 /* chrome, safari */
 ::-webkit-input-placeholder {
-    color:#CCC;
+    color:rgba(165, 165, 165, 0.712);
     font-style:italic;
 }
  
 /* mozilla */
 input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#CCC;
+    color:rrgba(165, 165, 165, 0.712);
     font-style:italic;
 }
  
 /* ie (faux placeholder) */
 input.placeholder-text, textarea.placeholder-text  { 
-    color:#CCC;
+    color:rgba(165, 165, 165, 0.712);
     font-style:italic;
 }
 /* ********* END ******* */

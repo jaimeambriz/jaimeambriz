@@ -25,7 +25,7 @@
       <a class="nav-content pull-left" href="#projects">Projects</a>
       <a class="nav-content github pull-right" target="_blank" href="https://github.com/jaimeambriz">
         <i class="fa fa-github"></i> GitHub</a>
-      <a class="nav-content email pull-right" href="mailto:jaime.ambriz@yahoo.com" target="_top">
+      <a class="nav-content email pull-right" href="#contact-form">
         <i class="fa fa-send"></i> Email Me</a>
     </div>
   </nav>
@@ -206,16 +206,9 @@
   <!-- FOOTER/CONTACT ME -->
   <div class="bkimg-3" id="contact-info">
     <div class="caption caption-form">
-      <!-- <h3 class="border">Contact me</h3>
-      <h3>Under Construction</h3> -->
       <div id="contact-form" class="clearfix">
-        <span class="under-construction"></span> Under Construction</p>
         <h1>Get In Touch!</h1>
-        <ul id="errors" class="">
-          <li id="info">There were some problems with your form submission:</li>
-        </ul>
-        <p id="success">Thanks for your message! We will get back to you ASAP!</p>
-        <form method="post" action="process.php">
+        <form method="post" action="https://formspree.io/ambrizjamie@gmail.com">
           <label for="name">Name:
             <span class="required">*</span>
           </label>
@@ -228,6 +221,7 @@
 
           <label for="telephone">Telephone: </label>
           <input type="tel" id="telephone" name="telephone" placeholder="123-456-7890" value="" />
+          <input type="text" name="_gotcha" style="display:none" />
 
           <label for="message">Message:
             <span class="required">*</span>
@@ -235,7 +229,7 @@
           <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
 
           <span id="loading"></span>
-          <input type="submit" value="Send" disabled id="submit-button" />
+          <input type="submit" value="Send" id="submit-button" />
           <p id="req-field-desc">
             <span class="required">*</span> indicates a required field</p>
         </form>
