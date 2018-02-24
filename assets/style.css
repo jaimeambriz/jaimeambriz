@@ -511,9 +511,11 @@ input.placeholder-text, textarea.placeholder-text  {
         transform: scale(1);
     }
 }
-@media(max-width:768px) {
-    
- }
+/* @media(max-width:768px) {
+    .bkimg-4 {
+        min-height: 100%
+    }
+ } */
 @media(max-width:600px) {
     .animation {
         font-size: 19px;
@@ -528,9 +530,7 @@ input.placeholder-text, textarea.placeholder-text  {
     .caption-form{
         top: 8%
     }  
-    .bkimg-4 {
-        min-height: 100%
-    }
+    
 }
 @media(max-width:470px) {
     .nav-content {
@@ -539,6 +539,9 @@ input.placeholder-text, textarea.placeholder-text  {
     }
     #contact-form{
         width: 90%
+    }
+    .bkimg-4 {
+        min-height: 100%
     }
 }
  /* ******* THIS IS FOR IPHONE 7 PLUS ******** */
