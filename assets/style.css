@@ -381,116 +381,6 @@ input.placeholder-text, textarea.placeholder-text  {
     font-style:italic;
 }
 /* ********* END ******* */
-
-@media(max-width:600px) {
-    .animation {
-        font-size: 19px;
-    }
-}
-@media(max-width:400px) {
-    .animation {
-        font-size: 13px;
-    }
-    
-}
-@media(max-width:370px) {
-    .animation {
-        font-size: 10px;
-    }
-}
-
-@media(max-width:600px) {
-    .nav-content {
-        font-size: 14px;
-        margin-right: 10px;
-    }
-    .caption-form{
-        top: 8%
-    }
-}
-
-@media(max-width:470px) {
-    .nav-content {
-        font-size: 12px;
-        margin-right: 6px;
-    }
-    #contact-form{
-        width: 90%
-    }
-}
-
-@media(max-width:370px) {
-    .nav-content {
-        font-size: 10px;
-        margin-right: 4px;
-    }
-}
-@media(max-width:600px) {
-    .nav-bar {
-        padding-top: 8px;
-    }
-}
-@media(max-height:910px) {
-    .bkimg-2 {
-        min-height: 120%
-    }
-}
-@media(max-height:780px) {
-    .bkimg-3 {
-        min-height: 110%
-    }
-    .bkimg-2 {
-        min-height: 140%
-    }
-}
-@media(max-height:680px) {
-    .bkimg-3 {
-        min-height: 130%
-    }
-    .bkimg-2 {
-        min-height: 160%
-    }
-}
-@media(max-height:590px) {
-    .bkimg-3 {
-        min-height: 150%
-    }
-    .bkimg-2 {
-        min-height: 180%
-    }
-}
-@media(max-height:500px) {
-    .bkimg-3 {
-        min-height: 170%
-    }
-    .bkimg-2 {
-        min-height: 200%
-    }
-}
-@media screen and (max-height:450px) {
-    .bkimg-2 {
-        min-height: 250%
-    }
-    .bkimg-3 {
-        min-height: 200%
-    }
-}
-@media(max-height:400px) {
-    .bkimg-3 {
-        min-height: 240%
-    }
-    .bkimg-2 {
-        min-height: 270%
-    }
-}
-@media(max-height:350px) {
-    .bkimg-3 {
-        min-height: 250%
-    }
-    .bkimg-2 {
-        min-height: 280%
-    }
-}
 @keyframes typing {
     from {
         width: 0;
@@ -507,12 +397,199 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 /* @keyframes blink {
-from, to { border-color: transparent }
-50% { border-color: white; }
+ from, to { border-color: transparent }
+ 50% { border-color: white; }
 } */
 
-/* Turn off parallax scrolling for tablets and phones */
 
+/* ******* MEDIA HEIGTH ******** */
+
+ @media(max-height:910px) {
+    .bkimg-2 {
+        min-height: 120%
+    }
+    .bkimg-4 {
+        min-height: 120%
+    }
+ }
+ @media(max-height:780px) {
+    .bkimg-3 {
+        min-height: 120%
+    }
+    .bkimg-2 {
+        min-height: 140%
+    }
+    .bkimg-4 {
+        min-height: 150%
+    }
+ }
+ @media(max-height:680px) {
+    .bkimg-3 {
+        min-height: 140%
+    }
+    .bkimg-2 {
+        min-height: 160%
+    }
+    .bkimg-4 {
+        min-height: 180%
+    }
+ }
+ @media(max-height:590px) {
+    .bkimg-3 {
+        min-height: 160%
+    }
+    .bkimg-2 {
+        min-height: 180%
+    }
+    .bkimg-4 {
+        min-height: 200%
+    }
+ }
+ @media(max-height:500px) {
+    .bkimg-3 {
+        min-height: 180%
+    }
+    .bkimg-2 {
+        min-height: 200%
+    }
+    .bkimg-4 {
+        min-height: 230%
+    }
+    .bkimg-1 {
+        min-height: 120%
+    }
+ }
+ @media screen and (max-height:450px) {
+    .bkimg-1 {
+        min-height: 150%
+    }
+    .bkimg-4, .bkimg-2 {
+        min-height: 250%
+    }
+    .bkimg-3 {
+        min-height: 200%
+    }
+ }
+ @media(max-height:400px) {
+    .bkimg-3 {
+        min-height: 240%
+    }
+    .bkimg-2 {
+        min-height: 270%
+    }
+ }
+ @media(max-height:350px) {
+    .bkimg-3 {
+        min-height: 250%
+    }
+    .bkimg-2 {
+        min-height: 280%
+    }
+ }
+ @media(max-height:325px) {
+    .bkimg-3 {
+        min-height: 260%
+    }
+    .bkimg-4 {
+        min-height: 280%
+    }
+ }
+ @media(max-height:300px) {
+    .bkimg-3 {
+        min-height: 290%
+    }
+    .bkimg-4 {
+        min-height: 290%
+    }
+ }
+/* ******* MEDIA WIDTH ******** */
+
+@media(max-width:991px){
+    .project-img:hover {
+        box-shadow: 0 0 50px white;
+        transition-duration:0s;
+        transform: scale(1);
+    }
+}
+/* @media(max-width:768px) {
+    .bkimg-3 {
+        min-height: 240%
+    }
+ } */
+@media(max-width:600px) {
+    .animation {
+        font-size: 19px;
+    }
+    .nav-bar {
+        padding-top: 8px;
+    }
+    .nav-content {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .caption-form{
+        top: 8%
+    }
+    
+}
+@media(max-width:470px) {
+    .nav-content {
+        font-size: 12px;
+        margin-right: 6px;
+    }
+    #contact-form{
+        width: 90%
+    }
+}
+ /* ******* THIS IS FOR IPHONE 7 PLUS ******** */
+@media screen and (max-width:450px) {
+    .bkimg-3 {
+        min-height: 133%
+    }
+    .bkimg-2 {
+        min-height: 250%
+    }
+    .bkimg-2 .caption{
+      top: 10%
+  }
+}
+ /* ******* THIS IS FOR SAMSUNG GALAXY S7 ******* */
+@media screen and (max-width:400px) {
+    .bkimg-3 {
+        min-height: 154%
+    }
+    .animation {
+        font-size: 13px;
+    }
+}
+@media(max-width:370px) {
+    .animation {
+        font-size: 10px;
+    }
+    .nav-content {
+        font-size: 10px;
+        margin-right: 4px;
+    }
+
+}
+@media screen and (max-width:355px) {
+    .bkimg-3 {
+        min-height: 180%
+    }
+}
+ /* ******* THIS IS FOR IPHONE 6S ******** */
+@media screen and (max-width:325px) {
+    .bkimg-3 {
+        min-height: 200%
+    }
+}
+@media screen and (max-width:305px) {
+    .bkimg-3 {
+        min-height: 240%
+    }
+}
+
+ /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 600px) {
     .bkimg-1,
     .bkimg-2,
@@ -522,63 +599,8 @@ from, to { border-color: transparent }
     }
     
 }
-@media(max-width:991px){
-    .project-img:hover {
-        box-shadow: 0 0 50px white;
-        transition-duration:0s;
-        transform: scale(1);
-      
-    }
-}
-@media screen and (max-height:450px) {
-    .bkimg-4 {
-        min-height: 250%
-    }
-}
 
-/* ******* THIS IS FOR IPHONE 7 PLUS ******** */
-@media screen and (max-width:450px) {
-    .bkimg-3 {
-        min-height: 133%
-    }
-}
-/* ******* THIS IS FOR SAMSUNG GALAXY S7 ******* */
-@media screen and (max-width:400px) {
-    .bkimg-3 {
-        min-height: 154%
-    }
-}
-@media screen and (max-width:355px) {
-    .bkimg-3 {
-        min-height: 180%
-    }
-}
-/* ******* THIS IS FOR IPHONE 6S ******** */
-@media screen and (max-width:325px) {
-    .bkimg-3 {
-        min-height: 200%
-    }
-}
-/* @media screen and (max-width:315px) {
-    .bkimg-3 {
-        min-height: 240%
-    }
-} */
-/* @media screen and (max-width:770px), */
-
-@media screen and (max-width:450px) {
-  .bkimg-2 {
-      min-height: 250%
-  }
-  .bkimg-2 .caption{
-    top: 10%
-}
-}
-
-/* @media screen and (max-width:770px), */
-@media screen and (max-height:450px) {
-    .bkimg-1 {
-        min-height: 150%
-    }
-}
-
+/* #region 
+ to collapse comment blocks, make sure to indent
+ or space eeveryhing inside the region
+/* #endregion 
