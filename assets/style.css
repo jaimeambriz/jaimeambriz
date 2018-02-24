@@ -543,7 +543,7 @@ from, to { border-color: transparent }
 }
 @media screen and (max-width:375px) {
     .bkimg-3 {
-        min-height: 150%
+        min-height: 160%
     }
 }
 @media screen and (max-width:355px) {
