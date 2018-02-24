@@ -551,6 +551,11 @@ from, to { border-color: transparent }
         min-height: 170%
     }
 }
+@media screen and (max-width:325px) {
+    .bkimg-3 {
+        min-height: 200%
+    }
+}
 /* @media screen and (max-width:770px), */
 
 @media screen and (max-width:450px) {
